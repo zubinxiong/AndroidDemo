@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.ewriter.chapter3.customview.TopBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/topbar"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    custom:leftBackground="@drawable/blue_button"
+    custom:leftText="Back"
+    custom:leftTextColor="#FFFFFF"
+    custom:rightBackground="@drawable/blue_button"
+    custom:rightText="More"
+    custom:rightTextColor="#FFFFFF"
+    custom:mytitle="自定义标题"
+    custom:mytitleTextColor="#123412"
+    custom:titleTextSize="15sp">
+
+</me.ewriter.chapter3.customview.TopBar>
