@@ -10,9 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="me.ewriter.chapter5.DragViewTest">
     
-    <me.ewriter.chapter5.DragView1
-        android:layout_width="50dp"
-        android:layout_height="50dp" />
+    <!--<me.ewriter.chapter5.DragView1-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp" />-->
+
+    <me.ewriter.chapter5.DragView3
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
 
 
 </LinearLayout>
