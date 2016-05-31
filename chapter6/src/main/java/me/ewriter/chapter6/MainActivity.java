@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import me.ewriter.chapter6.clock.ClockActivity;
+import me.ewriter.chapter6.layer.LayerActivity;
+import me.ewriter.chapter6.layer.MyLayer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,5 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void BtnClock(View view) {
         startActivity(new Intent(this, ClockActivity.class));
+    }
+
+    public void BtnMyLayer(View view) {
+        startActivity(new Intent(this, LayerActivity.class));
     }
 }

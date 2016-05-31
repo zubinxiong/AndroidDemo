@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".clock.ClockActivity"></activity>
+        <activity android:name=".clock.ClockActivity" />
+        <activity android:name=".layer.LayerActivity"></activity>
     </application>
 
 </manifest>
