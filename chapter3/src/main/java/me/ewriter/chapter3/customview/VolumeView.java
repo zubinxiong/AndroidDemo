@@ -1,4 +1,4 @@
-package me.ewriter.chapter3;
+package me.ewriter.chapter3.customview;
 
 import android.content.Context;
 import android.graphics.Canvas;

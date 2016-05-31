@@ -1,4 +1,4 @@
-package me.ewriter.chapter3.customview;
+package me.ewriter.chapter3;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import me.ewriter.chapter3.R;
+import me.ewriter.chapter3.customview.MyViewTest;
 
 public class MainActivity extends AppCompatActivity {
 
