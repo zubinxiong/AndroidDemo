@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".clock.ClockActivity" />
-        <activity android:name=".layer.LayerActivity"></activity>
+        <activity android:name=".layer.LayerActivity" />
+        <activity android:name=".xfermode.RoundRectTestActivity" />
+        <activity android:name=".xfermode.XfermodeViewActivity"></activity>
     </application>
 
 </manifest>

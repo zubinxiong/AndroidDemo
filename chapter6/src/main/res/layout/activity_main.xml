@@ -22,4 +22,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:text="RoundRectXfermode"
+        android:onClick="BtnRoundRectXfermode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Xfermode"
+        android:onClick="BtnXfermode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

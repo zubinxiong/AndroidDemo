@@ -8,6 +8,8 @@ import android.view.View;
 import me.ewriter.chapter6.clock.ClockActivity;
 import me.ewriter.chapter6.layer.LayerActivity;
 import me.ewriter.chapter6.layer.MyLayer;
+import me.ewriter.chapter6.xfermode.RoundRectTestActivity;
+import me.ewriter.chapter6.xfermode.XfermodeViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,5 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void BtnMyLayer(View view) {
         startActivity(new Intent(this, LayerActivity.class));
+    }
+
+    public void BtnRoundRectXfermode(View view) {
+        startActivity(new Intent(this, RoundRectTestActivity.class));
+    }
+
+    public void BtnXfermode(View view) {
+        startActivity(new Intent(this, XfermodeViewActivity.class));
     }
 }
