@@ -8,6 +8,8 @@ import android.view.View;
 import me.ewriter.chapter6.clock.ClockActivity;
 import me.ewriter.chapter6.layer.LayerActivity;
 import me.ewriter.chapter6.layer.MyLayer;
+import me.ewriter.chapter6.surfaceview.SimpleDrawActivity;
+import me.ewriter.chapter6.surfaceview.SinActivity;
 import me.ewriter.chapter6.xfermode.RoundRectTestActivity;
 import me.ewriter.chapter6.xfermode.XfermodeViewActivity;
 
@@ -33,5 +35,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void BtnXfermode(View view) {
         startActivity(new Intent(this, XfermodeViewActivity.class));
+    }
+
+    public void BtnSinSurfaceView(View view) {
+        startActivity(new Intent(this, SinActivity.class));
+    }
+
+    public void BtnSimpleDraw(View view) {
+        startActivity(new Intent(this, SimpleDrawActivity.class));
     }
 }

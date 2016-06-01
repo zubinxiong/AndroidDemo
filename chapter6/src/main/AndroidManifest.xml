@@ -18,7 +18,9 @@
         <activity android:name=".clock.ClockActivity" />
         <activity android:name=".layer.LayerActivity" />
         <activity android:name=".xfermode.RoundRectTestActivity" />
-        <activity android:name=".xfermode.XfermodeViewActivity"></activity>
+        <activity android:name=".xfermode.XfermodeViewActivity" />
+        <activity android:name=".surfaceview.SinActivity" />
+        <activity android:name=".surfaceview.SimpleDrawActivity"></activity>
     </application>
 
 </manifest>
