@@ -12,7 +12,12 @@ import android.widget.TextView;
 
 import me.ewriter.chapter13.R;
 
-
+/**
+ *
+ * 在上下左右滑动时，先去判断每行(列)，使用0 表示空格，如果某行的数据为2204，那么先把非0数字存入一个list
+ * 即224，接着根据游戏规则把22合并即44，作为该行(列)的返回值，从滑动的方向开始防止list中的数字，这样讲每行(列)
+ * 处理完成后就完成了一次滑动
+ */
 public class Game extends Activity implements OnClickListener {
 
     // Activity的引用
