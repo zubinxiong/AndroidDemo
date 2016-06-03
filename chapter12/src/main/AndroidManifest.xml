@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".palette.PaletteActivity" />
+        <activity android:name=".activityTrans.AActivity" />
+        <activity android:name=".activityTrans.BActivity" />
+        <activity android:name=".circleReveral.CircleReveralActivity" />
+        <activity android:name=".animatedSelector.AnimatedSelectorActivity" />
+        <activity android:name=".notification.NotificationActivity"></activity>
     </application>
 
 </manifest>
