@@ -10,6 +10,7 @@ import me.ewriter.chapter7.animator.PropertyTest;
 import me.ewriter.chapter7.animator.TimerTest;
 import me.ewriter.chapter7.customAnimator.CustomAnim;
 import me.ewriter.chapter7.customAnimator.CustomTV;
+import me.ewriter.chapter7.vector.VectorActivity;
 import me.ewriter.chapter7.viewAnim.ViewAnimActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,5 +46,9 @@ public class MainActivity extends AppCompatActivity {
     public void imgClose(View view) {
         CustomTV customTV = new CustomTV();
         view.startAnimation(customTV);
+    }
+
+    public void BtnVector(View view) {
+        startActivity(new Intent(this, VectorActivity.class));
     }
 }

@@ -18,7 +18,8 @@
         <activity android:name=".viewAnim.ViewAnimActivity" />
         <activity android:name=".animator.TimerTest" />
         <activity android:name=".animator.PropertyTest" />
-        <activity android:name=".animator.DropTestActivity"></activity>
+        <activity android:name=".animator.DropTestActivity" />
+        <activity android:name=".vector.VectorActivity"></activity>
     </application>
 
 </manifest>
