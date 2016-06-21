@@ -1,4 +1,4 @@
-# Life with Android ,一步一个脚印 [博客地址](http://ewriter.me)
+# Life with Android ,一步一个脚印
 
 - Chapter3 ~ Chapter13 为 Android 群英传中的 demo ，做了部分修改并在上面增加了一些注释及评论用于备忘
 
