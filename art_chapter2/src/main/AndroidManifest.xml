@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.ewriter.art_chapter2">
 
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -20,17 +19,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:process=":remote"
-            android:name=".SecondActivity" />
-
+            android:name=".SecondActivity"
+            android:process=":remote" />
         <activity
-            android:process="me.ewriter.art_chapter2.remote"
-            android:name=".ThirdActivity"></activity>
+            android:name=".ThirdActivity"
+            android:process="me.ewriter.art_chapter2.remote" />
 
         <service
-            android:process=":remote"
-            android:name=".aidl.BookManagerService">
-        </service>
+            android:name=".aidl.BookManagerService"
+            android:process=":remote" />
+        <service
+            android:name=".messenger.MessengerService"
+            android:process=":remote"></service>
+
+        <activity android:name=".messenger.MessengerActivity"></activity>
     </application>
 
 </manifest>

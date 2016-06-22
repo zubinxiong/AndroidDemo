@@ -21,4 +21,10 @@
         <requestFocus />
     </EditText>
 
+    <Button
+        android:onClick="BtnMessengerActivity"
+        android:text="MessengerActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
