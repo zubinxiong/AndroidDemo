@@ -61,4 +61,11 @@ public class User implements Serializable, Parcelable {
         dest.writeByte((byte) (isMale ? 1 : 0));
         dest.writeParcelable(book, 0);
     }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "User:{userId:%s, userName:%s, isMale:%s}, with child:{%s}",
+                userId, userName, isMale, book);
+    }
 }
