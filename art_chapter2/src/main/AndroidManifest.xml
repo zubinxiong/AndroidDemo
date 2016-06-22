@@ -34,6 +34,12 @@
 
         <activity android:name=".messenger.MessengerActivity" />
         <activity android:name=".aidl.BookManagerActivity"></activity>
+        
+        <provider
+            android:authorities="me.ewriter.art_chapter2.provider"
+            android:name=".provider.BookProvider" >
+
+        </provider>
     </application>
 
 </manifest>
