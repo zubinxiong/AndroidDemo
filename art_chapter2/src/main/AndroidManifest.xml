@@ -30,9 +30,10 @@
             android:process=":remote" />
         <service
             android:name=".messenger.MessengerService"
-            android:process=":remote"></service>
+            android:process=":remote" />
 
-        <activity android:name=".messenger.MessengerActivity"></activity>
+        <activity android:name=".messenger.MessengerActivity" />
+        <activity android:name=".aidl.BookManagerActivity"></activity>
     </application>
 
 </manifest>

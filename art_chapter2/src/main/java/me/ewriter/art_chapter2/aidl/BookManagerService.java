@@ -12,6 +12,7 @@ public class BookManagerService extends Service {
 
     private static final String TAG = "BMS";
 
+
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
