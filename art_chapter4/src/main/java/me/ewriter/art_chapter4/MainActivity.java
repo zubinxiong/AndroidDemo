@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, TestActivity.class);
             startActivity(intent);
         } else if (view.getId() == R.id.button2) {
-
+            startActivity(new Intent(MainActivity.this, DemoActivity_1.class));
         } else if (view.getId() == R.id.button3) {
 
         }
