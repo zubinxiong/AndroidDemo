@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (view.getId() == R.id.button2) {
             startActivity(new Intent(MainActivity.this, DemoActivity_1.class));
         } else if (view.getId() == R.id.button3) {
-
+            startActivity(new Intent(MainActivity.this, DemoActivity2.class));
         }
     }
 
