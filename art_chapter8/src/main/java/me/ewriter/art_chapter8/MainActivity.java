@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, TestActivity.class);
             startActivity(intent);
         } else if (v.getId() == R.id.button2) {
-//            Intent intent = new Intent(this, DemoActivity_1.class);
-//            startActivity(intent);
+            Intent intent = new Intent(this, DemoActivity_1.class);
+            startActivity(intent);
         }
     }
 }

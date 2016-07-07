@@ -90,6 +90,11 @@ public class ImageLoader {
         }
     }
 
+    /** 返回 ImageLoader instance 对象*/
+    public static ImageLoader build(Context context) {
+        return new ImageLoader(context);
+    }
+
     /** 返回指定路径下的可用大小*/
     private long getUsableSpace(File path) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
