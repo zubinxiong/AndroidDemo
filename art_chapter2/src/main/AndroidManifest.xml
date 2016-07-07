@@ -2,7 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.ewriter.art_chapter2">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.ryg.chapter_2.permission.ACCESS_BOOK_SERVICE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.ryg.PROVIDER"
+        android:protectionLevel="normal" />
 
     <application
         android:name=".MyApplication"
@@ -33,13 +42,20 @@
             android:process=":remote" />
 
         <activity android:name=".messenger.MessengerActivity" />
-        <activity android:name=".aidl.BookManagerActivity"></activity>
-        
-        <provider
-            android:authorities="me.ewriter.art_chapter2.provider"
-            android:name=".provider.BookProvider" >
+        <activity android:name=".aidl.BookManagerActivity" />
 
-        </provider>
+        <provider
+            android:name=".provider.BookProvider"
+            android:authorities="me.ewriter.art_chapter2.provider"
+            android:permission="com.ryg.PROVIDER"
+            android:process=":provider" />
+
+        <activity android:name=".provider.ProviderActivity" />
+        <activity android:name=".socket.TCPClientActivity"></activity>
+
+        <service
+            android:name=".socket.TCPServerService"
+            android:process=":remote"/>
     </application>
 
 </manifest>

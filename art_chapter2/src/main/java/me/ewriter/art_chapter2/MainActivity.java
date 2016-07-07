@@ -13,9 +13,11 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 import me.ewriter.art_chapter2.aidl.Book;
+import me.ewriter.art_chapter2.aidl.BookManagerActivity;
 import me.ewriter.art_chapter2.manager.UserManager;
 import me.ewriter.art_chapter2.messenger.MessengerActivity;
 import me.ewriter.art_chapter2.model.User;
+import me.ewriter.art_chapter2.provider.ProviderActivity;
 import me.ewriter.art_chapter2.utils.MyConstants;
 import me.ewriter.art_chapter2.utils.MyUtils;
 
@@ -47,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
     public void BtnMessengerActivity(View view) {
         startActivity(new Intent(this, MessengerActivity.class));
     }
+
+    public void BookManagerActivity(View view) {
+        startActivity(new Intent(this, BookManagerActivity.class));
+    }
+
+    public void BtnProviderActivity(View view) {
+        startActivity(new Intent(this, ProviderActivity.class));
+    }
+
 
     @Override
     protected void onResume() {

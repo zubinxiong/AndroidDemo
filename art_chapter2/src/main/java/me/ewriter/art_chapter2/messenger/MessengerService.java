@@ -12,6 +12,7 @@ import android.util.Log;
 
 import me.ewriter.art_chapter2.utils.MyConstants;
 
+/** 运行在:remote,在服务端处理来自客户端的连接请求*/
 public class MessengerService extends Service {
 
     private static final String TAG = "MessengerService";

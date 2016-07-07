@@ -22,8 +22,21 @@
     </EditText>
 
     <Button
+        android:onClick="BookManagerActivity"
+        android:text="BookManagerActivity(AIDL)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" />
+
+    <Button
         android:onClick="BtnMessengerActivity"
         android:text="MessengerActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="BtnProviderActivity"
+        android:text="ProviderActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
