@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.ewriter.art_chapter2">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <permission
@@ -51,11 +51,16 @@
             android:process=":provider" />
 
         <activity android:name=".provider.ProviderActivity" />
-        <activity android:name=".socket.TCPClientActivity"></activity>
+        <activity android:name=".socket.TCPClientActivity" />
 
         <service
             android:name=".socket.TCPServerService"
-            android:process=":remote"/>
+            android:process=":remote" />
+        <service
+            android:name=".binderpool.BinderPoolService"
+            android:process=":remote" />
+
+        <activity android:name=".binderpool.BinderPoolActivity"></activity>
     </application>
 
 </manifest>

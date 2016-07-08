@@ -14,10 +14,12 @@ import java.io.Serializable;
 
 import me.ewriter.art_chapter2.aidl.Book;
 import me.ewriter.art_chapter2.aidl.BookManagerActivity;
+import me.ewriter.art_chapter2.binderpool.BinderPoolActivity;
 import me.ewriter.art_chapter2.manager.UserManager;
 import me.ewriter.art_chapter2.messenger.MessengerActivity;
 import me.ewriter.art_chapter2.model.User;
 import me.ewriter.art_chapter2.provider.ProviderActivity;
+import me.ewriter.art_chapter2.socket.TCPClientActivity;
 import me.ewriter.art_chapter2.utils.MyConstants;
 import me.ewriter.art_chapter2.utils.MyUtils;
 
@@ -56,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void BtnProviderActivity(View view) {
         startActivity(new Intent(this, ProviderActivity.class));
+    }
+
+    public void BtnTcpClientActivity(View view) {
+        startActivity(new Intent(this, TCPClientActivity.class));
+    }
+
+    public void BtnBinderPoolActivity(View view) {
+        startActivity(new Intent(this, BinderPoolActivity.class));
     }
 
 
