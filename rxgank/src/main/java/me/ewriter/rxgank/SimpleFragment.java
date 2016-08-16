@@ -1,20 +1,17 @@
 package me.ewriter.rxgank;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Observable;
 
 import me.ewriter.rxgank.adapter.SimpeFragmentAdapter;
 import me.ewriter.rxgank.api.ApiManager;
@@ -22,7 +19,6 @@ import me.ewriter.rxgank.api.entity.GankData;
 import me.ewriter.rxgank.api.entity.GankItem;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
@@ -44,10 +40,10 @@ public class SimpleFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
     private SimpeFragmentAdapter adapter;
     private List<GankItem> mTitleList;
+    private LinearLayoutManager mLayoutManager;
 
     int page = 1;
 
@@ -90,17 +86,44 @@ public class SimpleFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_refresh_layout);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
 
         mTitleList = new ArrayList<>();
         adapter = new SimpeFragmentAdapter(getActivity(), mTitleList);
         mRecyclerView.setAdapter(adapter);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
+        mLayoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
+        mRecyclerView.setLayoutManager(mLayoutManager);
 
         loadData();
+
+        mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+
+                // 当前可见item 数量
+                int visibleItemCount = recyclerView.getLayoutManager().getChildCount();
+                // 总共 item
+                int totalItemCount = recyclerView.getLayoutManager().getItemCount();
+                //第一个可见的position,这个方法必须要转换成指定的LayoutManager
+                int firstItemPosition = mLayoutManager.findFirstVisibleItemPosition();
+                
+                if (visibleItemCount + firstItemPosition >= totalItemCount) {
+//                    Toast.makeText(getActivity(), "到达底部", Toast.LENGTH_SHORT).show();
+                    loadData();
+                }
+
+                Log.d("SimpleFragment", "visibleItemCount = " + visibleItemCount +
+                        "; totalItemCount = " + totalItemCount + ";firstItemPosition = " + firstItemPosition);
+
+            }
+        });
     }
 
     private void loadData() {
@@ -157,7 +180,7 @@ public class SimpleFragment extends Fragment {
                 .subscribe(new Subscriber<GankItem>() {
                     @Override
                     public void onCompleted() {
-
+                        page++;
                     }
 
                     @Override

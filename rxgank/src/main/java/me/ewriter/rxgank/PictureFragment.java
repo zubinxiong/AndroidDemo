@@ -133,7 +133,7 @@ public class PictureFragment extends Fragment {
 
                     @Override
                     public void onNext(String s) {
-                        Log.d("PictureFragment", "onCompleted");
+                        Log.d("PictureFragment", "onNext");
                         mList.add(s);
 
                         adapter.notifyDataSetChanged();
