@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.internal.ScrimInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.ewriter.zhihuwelcome.MainActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <!--如果使用4.4 的状态栏，就不用上面两个父layout，直接用下面的relativeLayout就可以了
+         但是如果要使用全透明的效果，那么必须包含上面的两个layout -->
+
+        <!--<RelativeLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--</RelativeLayout>-->
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.design.internal.ScrimInsetsFrameLayout>

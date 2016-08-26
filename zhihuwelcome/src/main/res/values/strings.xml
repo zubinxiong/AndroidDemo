@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ZhihuWelcome</string>
+
+    <string-array name="intro">
+        <item>在知乎\n发现你所有疑问的解答</item>
+        <item>在知乎\n发现同伴，发现知己</item>
+        <item>在知乎\n发现更美的世界</item>
+    </string-array>
+</resources>
