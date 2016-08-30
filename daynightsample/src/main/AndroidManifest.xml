@@ -18,7 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="me.ewriter.daynightsample.ZhihuActivity"></activity>
+        <activity android:name="me.ewriter.daynightsample.ZhihuActivity" />
+        <activity
+            android:name="me.ewriter.daynightsample.TansferActivity"></activity>
     </application>
 
 </manifest>

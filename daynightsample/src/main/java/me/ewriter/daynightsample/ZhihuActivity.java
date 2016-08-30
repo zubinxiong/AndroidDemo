@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -11,15 +12,22 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
 import me.ewriter.nightmodedemo.R;
 
 public class ZhihuActivity extends AppCompatActivity {
+
+    Bitmap bp = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,5 +130,51 @@ public class ZhihuActivity extends AppCompatActivity {
             getSupportActionBar().setBackgroundDrawable(new ColorDrawable(typedValue1.data));
 
         }
+    }
+
+    public void onTransferActivityClick(View view) {
+        // 获取屏幕当前截图
+        final View decorView = getWindow().getDecorView().getRootView();
+        // 设置false 清除缓存
+        decorView.setDrawingCacheEnabled(false);
+        // 设置为 true 获取 bitmap
+        decorView.setDrawingCacheEnabled(true);
+        decorView.buildDrawingCache(true);
+
+        if (decorView.getDrawingCache() != null) {
+            bp = Bitmap.createBitmap(decorView.getDrawingCache());
+            decorView.setDrawingCacheEnabled(false);
+        }
+
+        // bitmap 数据太大，直接传 intent 会报错
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(new File(this.getCacheDir().getAbsolutePath() + "/intent.png"));
+            bp.compress(Bitmap.CompressFormat.PNG, 100, fos);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        Intent intent = new Intent(this, TansferActivity.class);
+//        intent.putExtra("bitmap", bp);
+        startActivity(intent);
+        this.overridePendingTransition(R.anim.none, R.anim.none);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
+                boolean isNight = sharedPreferences.getBoolean("isNight", false);
+                if (isNight) {
+                    setTheme(R.style.Day);
+                    sharedPreferences.edit().putBoolean("isNight", false).commit();
+                } else {
+                    setTheme(R.style.Night);
+                    sharedPreferences.edit().putBoolean("isNight", true).commit();
+                }
+                recreate();
+            }
+        },50);
+
     }
 }
