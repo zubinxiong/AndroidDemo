@@ -34,6 +34,7 @@ public class User implements Serializable, Parcelable {
         userId = in.readInt();
         userName = in.readString();
         isMale = in.readByte() != 0;
+        // 因为 book 是另一个 Parcelable 对象，所以需要传递当前线程的上下文加载器，否则会找不到类
         book = in.readParcelable(Thread.currentThread().getContextClassLoader());
     }
 
@@ -49,6 +50,7 @@ public class User implements Serializable, Parcelable {
         }
     };
 
+    // 如果含有文件描述返回1，几乎所有的都是返回0
     @Override
     public int describeContents() {
         return 0;

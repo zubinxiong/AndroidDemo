@@ -23,6 +23,7 @@ public class Book implements Parcelable{
         bookName = in.readString();
     }
 
+    // 反序列化由 CREATOR 来完成
     public static final Creator<Book> CREATOR = new Creator<Book>() {
         @Override
         public Book createFromParcel(Parcel in) {
@@ -40,6 +41,7 @@ public class Book implements Parcelable{
         return 0;
     }
 
+    // 序列化功能
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(bookId);
