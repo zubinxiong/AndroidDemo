@@ -7,7 +7,7 @@ import java.util.*;
  * 这里的观察者也是使用Java 自带的观察者，而不是自己实现的Observer
  */
 
-public class CurrentConditionsDisplay implements java.util.Observer, me.ewriter.chapter2.weather.DisplayElement {
+public class CurrentConditionsDisplay implements java.util.Observer, DisplayElement {
 
     Observable observable;
     private float temperature;
