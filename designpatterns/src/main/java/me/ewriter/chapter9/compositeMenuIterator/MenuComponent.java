@@ -1,4 +1,4 @@
-package me.ewriter.chapter9.compositeMenu;
+package me.ewriter.chapter9.compositeMenuIterator;
 
 import java.util.*;
 
@@ -26,7 +26,9 @@ public abstract class MenuComponent {
 	public boolean isVegetarian() {
 		throw new UnsupportedOperationException();
 	}
-  
+
+	public abstract Iterator createIterator();
+ 
 	public void print() {
 		throw new UnsupportedOperationException();
 	}
