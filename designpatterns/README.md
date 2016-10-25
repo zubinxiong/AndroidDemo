@@ -7,3 +7,4 @@
 ### chapter7 是适配器模式与外观模式
 ### chapter8 是模板方法模式
 ### chapter9 是迭代器与组合模式
+### chapter10 是状态模式
