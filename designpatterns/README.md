@@ -8,3 +8,5 @@
 ### chapter8 是模板方法模式
 ### chapter9 是迭代器与组合模式
 ### chapter10 是状态模式
+### chapter11 是代理模式
+### chapter12 是复合模式
