@@ -1,0 +1,25 @@
+# ninja log v5
+0	41	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+41	74	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d
+1	61	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+61	127	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d
+0	44	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+44	81	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d
+1	72	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+72	112	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d
+1	47	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+47	89	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d
+1	48	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+48	87	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d
+1	44	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+44	81	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d
+0	44	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+44	79	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d
+0	42	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+42	75	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d
+0	48	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+48	85	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d
+0	43	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+43	78	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d
+0	44	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	efefce3a27421e0a
+44	78	0	../obj/armeabi/libnative-lib.so	1e510ef63e668c1d

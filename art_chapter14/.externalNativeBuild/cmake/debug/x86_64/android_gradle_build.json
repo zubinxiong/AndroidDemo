@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "E:/AndroidHeroDemo/art_chapter14/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"D:\\ASSdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build E:\\AndroidHeroDemo\\art_chapter14\\.externalNativeBuild\\cmake\\debug\\x86_64 --target clean"
+	],
+	"libraries" : 
+	{
+		"native-lib-Debug-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "native-lib",
+			"buildCommand" : "D:\\ASSdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build E:\\AndroidHeroDemo\\art_chapter14\\.externalNativeBuild\\cmake\\debug\\x86_64 --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target x86_64-none-linux-android -gcc-toolchain D:/ASSdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/windows-x86_64 --sysroot=D:/ASSdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dnative_lib_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "E:/AndroidHeroDemo/art_chapter14/src/main/jni/native-lib.c",
+					"workingDirectory" : "E:/AndroidHeroDemo/art_chapter14/.externalNativeBuild/cmake/debug/x86_64"
+				}
+			],
+			"output" : "E:/AndroidHeroDemo/art_chapter14/.externalNativeBuild/cmake/debug/obj/x86_64/libnative-lib.so",
+			"toolchain" : "125205793"
+		}
+	},
+	"toolchains" : 
+	{
+		"125205793" : 
+		{
+			"cCompilerExecutable" : "D:/ASSdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "D:/ASSdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

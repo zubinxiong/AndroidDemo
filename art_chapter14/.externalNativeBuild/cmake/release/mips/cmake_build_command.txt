@@ -1,0 +1,14 @@
+Executable : D:\ASSdk\cmake\3.6.3155560\bin\cmake.exe
+arguments : 
+-HE:\AndroidHeroDemo\art_chapter14
+-BE:\AndroidHeroDemo\art_chapter14\.externalNativeBuild\cmake\release\mips
+-GAndroid Gradle - Ninja
+-DANDROID_ABI=mips
+-DANDROID_NDK=D:\ASSdk\ndk-bundle
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=E:\AndroidHeroDemo\art_chapter14\.externalNativeBuild\cmake\release\obj\mips
+-DCMAKE_BUILD_TYPE=Release
+-DCMAKE_MAKE_PROGRAM=D:\ASSdk\cmake\3.6.3155560\bin\ninja.exe
+-DCMAKE_TOOLCHAIN_FILE=D:\ASSdk\ndk-bundle\build\cmake\android.toolchain.cmake
+-DANDROID_NATIVE_API_LEVEL=17
+jvmArgs : 
+

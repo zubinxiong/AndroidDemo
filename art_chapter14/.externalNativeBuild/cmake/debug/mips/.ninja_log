@@ -1,0 +1,25 @@
+# ninja log v5
+0	66	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+66	111	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c
+1	49	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+49	76	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c
+0	62	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+62	94	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c
+1	49	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+49	76	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c
+0	55	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+55	81	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c
+0	46	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+46	74	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c
+0	49	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+49	77	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c
+1	45	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+45	68	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c
+0	45	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+45	71	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c
+0	47	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+47	73	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c
+1	60	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+60	93	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c
+0	44	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b807e3fa016fac6f
+44	77	0	../obj/mips/libnative-lib.so	5fb57e961a864f6c

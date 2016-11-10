@@ -1,0 +1,25 @@
+# ninja log v5
+0	36	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+36	68	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345
+1	38	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+38	62	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345
+1	27	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+27	52	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345
+0	28	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+28	51	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345
+1	29	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+29	53	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345
+1	28	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+28	52	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345
+0	28	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+28	50	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345
+0	26	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+26	48	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345
+0	27	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+27	49	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345
+0	28	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+28	64	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345
+1	27	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+27	48	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345
+1	26	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	48dd33917e326bcc
+26	48	0	../obj/arm64-v8a/libnative-lib.so	b296b8a3160e4345

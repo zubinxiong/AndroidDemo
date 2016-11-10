@@ -1,0 +1,25 @@
+# ninja log v5
+1	49	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+49	134	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
+1	35	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+35	75	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
+0	30	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+30	68	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
+0	29	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+29	70	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
+0	27	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+27	64	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
+0	31	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+31	69	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
+0	31	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+32	75	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
+0	26	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+26	60	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
+1	28	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+28	63	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
+0	27	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+28	62	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
+0	29	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+29	63	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
+0	27	0	CMakeFiles/native-lib.dir/src/main/jni/native-lib.c.o	b3b8cd8ddf0e96e3
+27	61	0	../obj/x86_64/libnative-lib.so	60b2789118e13839
