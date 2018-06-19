@@ -1,4 +1,4 @@
-# Life with Android ,一步一个脚印
+# Android Demo, 学习过程中的一些笔记
 
 - chapter3 ~ chapter13 为 「Android 群英传」的 Demo ，做了部分修改并在上面增加了一些注释及评论用于备忘
 
